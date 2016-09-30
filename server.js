@@ -17,10 +17,10 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('ui/article-One.html', function (req, res) {
+app.get('/ui/article-One', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-One.html'));
 });
-app.get('/', function (req, res) {
+app.get('/ui/article-Two', function (req, res) {
   res.send("This article will be uploaded soon");
 });
 
