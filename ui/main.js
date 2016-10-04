@@ -15,5 +15,5 @@ img.onclick = function () {
 // Moving Ninja image
 var nin = document.getElementById('ninja');
 img.onclick = function() {
-    img.style.marginLeft = '100px';
+    nin.style.marginLeft = '100px';
 };
