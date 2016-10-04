@@ -12,3 +12,8 @@ function moveRight() {
 img.onclick = function () {
     var interval = setInterval(moveRight,100);
 };
+// Moving Ninja image
+var nin = document.getElementById('ninja');
+nin.onclick = function() {
+    img.style.marginLeft = '100px';
+};
