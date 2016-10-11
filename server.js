@@ -14,6 +14,7 @@ app.get('/counter', function (req, res) {
    counter= counter + 1;
    res.send(counter.toString());
 });
+
 app.get('/ui/bikes', function (req, res) {
   res.sendFile(path.join(__dirname,  'ui','bikes.html'));
 });
