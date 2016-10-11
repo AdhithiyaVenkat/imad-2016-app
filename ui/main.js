@@ -18,12 +18,13 @@ button.onclick = function() {
       //Not yet done
     }; 
 
-
-//Make a request
+  //Make a request
     request.open('GET' , 'http://adhithiyavenkat.imad.hasura-app.io/counter' , true);
     request.send(null);
 };    
 
+
+//Input Box Code
 var nameInput = document.getElementById('name');
 var name = nameInput.value;
 var submit = document.getElementById('submit_btn');
@@ -35,7 +36,7 @@ submit.onclick = function() {
   var list = '';
   for (var i=0; i<names.length; i++)
   {
-      list += '<li>' + names[i] + '</li>';
+      list == '<li>' + names[i] + '</li>';
   }
   var ul = document.getElementById('namelist');
   ul= list;
