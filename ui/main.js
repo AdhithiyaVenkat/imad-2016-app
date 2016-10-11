@@ -25,7 +25,7 @@ button.onclick = function() {
 };    
 
 var nameInput = document.getElementById('name');
-var name = nameInput.value;
+name = nameInput.value;
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
   //Make a request to server and send the name
@@ -39,6 +39,4 @@ submit.onclick = function() {
   }
   var ul = document.getElementById('namelist');
   ul= list;
-};
-    
 };
