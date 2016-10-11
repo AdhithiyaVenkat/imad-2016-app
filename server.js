@@ -37,7 +37,7 @@ app.get('/ui/article-Two', function (req, res) {
 var names=[];
 app.get('/submit-name', function (req,res){ //  /submit-name?name-XXXXX
 //Get the name from the request
-   var name = query.params.name;
+   var name = req.query.name;
    
    names.push(name);
 //JSON - JavScript On Notation
