@@ -36,9 +36,15 @@ app.get('/ui/article-Two', function (req, res) {
 
 var names=[];
 app.get('/submit-name/:name', function (req,res){
+//Get the name from the request
    var name = req.params.name;
+   
    names = push(name);
+//JSON - JavScript On Notation
+    res.send(JSON.stringify(names));
 });
+
+
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname,'ui','main.js'));
 });
