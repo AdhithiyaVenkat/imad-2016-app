@@ -30,14 +30,13 @@ var name = nameInput.value;
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
   //Make a request to server and send the name
-  
-  //Display a list of names
+  //Capture the list of names and render it as a list of names
   var names = ['name1', 'name2', 'name3', 'name4'];
   var list = '';
   for (var i=0; i<names.length; i++)
   {
-      list == '<li>' + names[i] + '</li>';
+      list += '<li>' + names[i] + '</li>';
   }
   var ul = document.getElementById('namelist');
-  ul= list;
+  ul.innerHTML= list;
 };
