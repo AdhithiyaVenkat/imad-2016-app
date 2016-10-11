@@ -10,18 +10,17 @@ button.onclick = function() {
       if( request.readyState === XMLHttpRequest.DONE );
       //Take some action
       {
-         
-          if(request.status === 200)
+        if(request.status === 200)
             counter = request.responseText;
             var span = document.getElementById('count');
             span.innerHTML = counter.toString();
       }
       //Not yet done
-     }; 
-};
+    }; 
+
 
 //Make a request
-request.open('GET' , 'http://adhithiyavenkat.imad.hasura-app.io/counter' , true);
-request.send(null);
-    
+    request.open('GET' , 'http://adhithiyavenkat.imad.hasura-app.io/counter' , true);
+    request.send(null);
+};    
 
