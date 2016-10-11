@@ -34,6 +34,11 @@ app.get('/ui/article-Two', function (req, res) {
   res.send("This article will be uploaded soon");
 });
 
+var names=[];
+app.get('/submit-name/:name', function (req,res){
+   var name = req.params.name;
+   names = push(name);
+});
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname,'ui','main.js'));
 });
