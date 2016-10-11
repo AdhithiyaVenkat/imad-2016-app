@@ -24,9 +24,9 @@ button.onclick = function() {
 };    
 
 
-//Submit Name
 var nameInput = document.getElementById('name');
 var name = nameInput.value;
+//Submit Name
 var submit = document.getElementById('submit_btn');
 button.onclick = function() {
   
@@ -55,6 +55,9 @@ button.onclick = function() {
     }; 
 
   //Make a request
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+
     request.open('GET' , 'http://adhithiyavenkat.imad.hasura-app.io/submit-name?name=' + name , true);
     request.send(null);
 };    
