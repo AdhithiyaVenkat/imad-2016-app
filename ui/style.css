@@ -20,3 +20,8 @@ body {
     height: 200px;
 }
 
+img {
+    display:block;
+    height:100px;
+    width:50px;
+}
